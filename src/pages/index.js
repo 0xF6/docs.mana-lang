@@ -23,7 +23,7 @@ function Home() {
     return (
         <Layout
             title={`${siteConfig.title}`}
-            description="Awesome Firestore based CMS">
+            description="Mana Lang">
 
             <div className="flex flex-col min-h-screen overflow-hidden">
                 <main className="flex-grow">
