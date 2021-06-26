@@ -7,7 +7,7 @@ module.exports = {
   tagline: 'Dinosaurs are cool',
   url: 'https://mana-lang.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: '0xF6',
