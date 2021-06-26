@@ -1,0 +1,1 @@
+docs.mana-lang
