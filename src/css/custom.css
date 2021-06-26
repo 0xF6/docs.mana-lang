@@ -27,3 +27,56 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+.translate-y-1\/2 {
+  --tw-translate-y: 50%;
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.w-px {
+  width: 1px;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.p-px {
+  padding: 1px;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(234,234,234,var(--tw-bg-opacity));
+}

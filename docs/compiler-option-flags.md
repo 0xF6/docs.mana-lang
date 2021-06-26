@@ -8,10 +8,10 @@
 
 Enable listing experemental options.
 
-{% hint style="warning" %}
+:::caution
 default: **false**  
 experemental: **no**
-{% endhint %}
+:::
 
 ### \[preview\] Simplify literal expression.
 
@@ -21,10 +21,10 @@ experemental: **no**
 
 Simplifies expressions of the form **1 + 2 + 3 + 4** in literal **10** when possible.
 
-{% hint style="warning" %}
+:::caution
 default: **false**  
 experemental: **yes**
-{% endhint %}
+:::
 
   
 ****

@@ -1,40 +1,47 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import React, { useEffect } from "react";
+import Layout from "@theme/Layout";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+import HeroHome from "../partials/HeroHome";
+
+import Separator from "../partials/Separator";
+
+import BuildIt from '../partials/BuildIt';
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../css/tailwind.css";
+
+function Home() {
+    const context = useDocusaurusContext();
+    const { siteConfig = {} } = context;
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+    return (
+        <Layout
+            title={`${siteConfig.title}`}
+            description="Awesome Firestore based CMS">
+
+            <div className="flex flex-col min-h-screen overflow-hidden">
+                <main className="flex-grow">
+                    <HeroHome/>
+                    <Separator/>
+                    <br/>
+                    <BuildIt />
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </main>
+
+            </div>
+        </Layout>
+    );
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+export default Home;
