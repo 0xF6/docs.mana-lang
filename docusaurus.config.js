@@ -10,8 +10,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: '0xF6', // Usually your GitHub org/user name.
-  projectName: 'mana_lang', // Usually your repo name.
+  organizationName: '0xF6',
+  projectName: 'mana_lang',
   themeConfig: {
     navbar: {
       title: 'Mana Lang',
@@ -24,7 +24,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -38,46 +38,41 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Overviews/Guides',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
             },
+            {
+              label: 'API',
+              to: '/docs/api',
+            },
+            {
+              label: 'Language Specification',
+              to: '/docs/api',
+            },
+            {
+              label: 'Download',
+              href: 'https://github.com/0xF6/mana_lang',
+            }
           ],
         },
         {
-          title: 'Community',
+          title: 'Social',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/0xF6/mana_lang',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: '/blog',
             },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
           ],
-        },
+        }
       ],
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Mana Lang.`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Mana Lang. MIT License`,
     },
     prism: {
       theme: lightCodeTheme,
