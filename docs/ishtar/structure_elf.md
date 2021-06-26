@@ -8,9 +8,9 @@ description: Architecture of executable file for the Ishtar virtual machine
 
 Use default ELF reader.
 
-{% hint style="warning" %}
+:::caution
  All Ishtar IL code is contained in **.code** elf section.
-{% endhint %}
+:::
 
 After reading elf **.code** section, following instructions to decode the IL Code
 

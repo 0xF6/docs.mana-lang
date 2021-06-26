@@ -13,13 +13,22 @@ module.exports = {
   organizationName: '0xF6',
   projectName: 'mana_lang',
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+    },
     navbar: {
+      hideOnScroll: true,
       title: 'Mana Lang',
       logo: {
         alt: 'Mana Lang Logo',
         src: 'img/icon.svg',
       },
       items: [
+        {
+          type: 'search',
+          position: 'right',
+        },
         {
           type: 'doc',
           docId: 'intro',
@@ -86,13 +95,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/0xF6/docs.mana-lang/edit/master/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/0xF6/docs.mana-lang/edit/master/website/blog/',
         },
