@@ -8,25 +8,25 @@ const DependencyList = [
   {
     title: 'CLI',
     Svg: require('../../static/img/cli.svg').default,
-    url: "/docs/how-to-cli",
+    url: "/docs/guides/how-to-cli",
     desc: "Building Tools"
   },
   {
     title: 'Embedded',
     Svg: require('../../static/img/cpu.svg').default,
-    url: "/docs/how-to-embedded",
+    url: "/docs/guides/how-to-embedded",
     desc: "Built your IoT"
   },
   {
     title: 'AI',
     Svg: require('../../static/img/brain.svg').default,
-    url: "/docs/how-to-ai",
+    url: "/docs/guides/how-to-ai",
     desc: "Build your SkyNet"
   },
   {
     title: 'Quantum',
     Svg: require('../../static/img/stem.svg').default,
-    url: "/docs/how-to-quantum",
+    url: "/docs/guides/how-to-quantum",
     desc: "Hack Pentagon"
   }
 ];
