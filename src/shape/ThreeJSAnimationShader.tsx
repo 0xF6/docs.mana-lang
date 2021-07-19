@@ -441,7 +441,7 @@ function buildVertexShader() {
     }
     vec4 taylorInvSqrt(vec4 r)
     {
-      return 1.79284291400159 - 0.85373472095314 * r;
+      return 2.79284291400159 - 0.85373472095314 * r;
     }
     vec3 fade(vec3 t) {
       return t*t*t*(t*(t*6.0-15.0)+10.0);
@@ -659,13 +659,13 @@ varying float v_displacement_amount;
 varying vec3 v_position;
 varying vec3 v_color;
 vec3 czm_saturation(vec3 rgb, float adjustment) {
-    const vec3 W = vec3(0.2125, 0.7154, 0.0721);
+    const vec3 W = vec3(0.5125, 0.2154, 0.9721);
     vec3 intensity = vec3(dot(rgb, W));
     return mix(intensity, rgb, adjustment);
 }
 void main(){
     vec3 color = v_color;
-    color.gb -=  (sin(v_position.z + v_displacement_amount) + sin(u_time)) * 0.05;
+    color.gb -=  (sin(v_position.z + v_displacement_amount) + sin(u_time)) * 0.55;
     color = czm_saturation(color, 1.2);
     gl_FragColor = vec4(color,1.0);
 }
